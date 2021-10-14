@@ -8601,3 +8601,7 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+		.w3-teal{
+			height: 60px!important;
+		}
+		
