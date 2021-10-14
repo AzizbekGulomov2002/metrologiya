@@ -8603,5 +8603,7 @@ input, select, textarea {
 			}
 		.w3-teal{
 			height: 60px!important;
+			position: fixed;
+			z-index: 1;
 		}
 		
