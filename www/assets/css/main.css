@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -8601,9 +8602,13 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
-		.w3-teal{
-			height: 60px!important;
-			position: fixed;
-			z-index: 1;
-		}
-		
+
+			.w3-teal{
+				height: 60px!important;
+				position: fixed;
+				z-index: 1;
+				
+
+			}
+			
+			
