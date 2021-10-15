@@ -52,6 +52,13 @@
             </div>
     </nav>
 
+    <!-- tepaga chiqish tugmasi -->
+    <button onclick="topFunction()" style="position: fixed;z-index: 1000;bottom: 20px;right: 20px;display: none;"
+        id="topBtn" type="button" class="btn btn-primary">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script src="./../../top.js"></script>
+
     <div class="card" style="width: 21rem;margin: auto;margin-top: 40px;">
         <div class="card-body">
             <h5 class="card-title">Standartlashtirish. Standartlashtirish Davlat tizimi
@@ -310,24 +317,41 @@
                 hujjatlarni ishlab chiqishni ta’minlaydi.
                 Maqbullik (optimallik) prinsipi standartlashtirish obyektiga amaliyotda ko‘p marotaba takror ishlab
                 chiqarish boshlangunigacha optimal talablarni aniqlash va o‘rnatishga ketma-ket yondashishni aks
-                ettiradi. Bu yerda ko‘proq standartlashtirish jarayonining ijodiy qismi aks etgan. Eng yuqori natijaviylikka ratsional, iqtisodiy, optimal variant tanlangandagina erishish mumkin.
-                Istiqbollilik va maqbullik prinsiplari o‘zaro chambarchas bog‘liq va bir-birini to‘ldiruvchi prinsiplar hisoblanadi.
-                Ixtiyoriy tan olish prinsipi savdo va ishlab chiqarishdagi chegara-lashlardan qochish maqsadida standartlashtirish bo‘yicha hujjatlarni ixtiyoriy qo‘l-lashni aks ettiradigan prinsip bo‘lib, u ayniqsa davlat ishtirokisiz mahsulotni ishlab chiqarish va sotishni ta’minlovchi xususiy korxona va boshqa tashkilotlar mahsulotlarining standartlariga tegishlidir.
-                Moslashuvchanlik (tez o‘zgaruvchanlik) prinsipi ilmiy-texnik rivojlanish hisobiga fan, texnika va texnologiyaning izchillik bilan rivojlanishida, ishlab chiqarish muhitining doimiy o‘zgarishida obyektlardan ko‘p marotabali, uzoq muddatli, maqsadli foydalanishni aks ettirdi.
-                Jo‘shqinlik prinsipi standartlashtirish obyektlarini ilmiy-texnikaviy taraqqiyot talablariga muvofiqligini tartiblashtirish maqsadida ularga qo‘yilgan talablarni davriy ravishda qayta ko‘rib chiqishni aks ettiradi.
-                Standartning eskirishi – uning ijtimoiy foydasi va iqtisodiy samarasini davomiyligini chegaralovchi asosiy omildir.
+                ettiradi. Bu yerda ko‘proq standartlashtirish jarayonining ijodiy qismi aks etgan. Eng yuqori
+                natijaviylikka ratsional, iqtisodiy, optimal variant tanlangandagina erishish mumkin.
+                Istiqbollilik va maqbullik prinsiplari o‘zaro chambarchas bog‘liq va bir-birini to‘ldiruvchi prinsiplar
+                hisoblanadi.
+                Ixtiyoriy tan olish prinsipi savdo va ishlab chiqarishdagi chegara-lashlardan qochish maqsadida
+                standartlashtirish bo‘yicha hujjatlarni ixtiyoriy qo‘l-lashni aks ettiradigan prinsip bo‘lib, u ayniqsa
+                davlat ishtirokisiz mahsulotni ishlab chiqarish va sotishni ta’minlovchi xususiy korxona va boshqa
+                tashkilotlar mahsulotlarining standartlariga tegishlidir.
+                Moslashuvchanlik (tez o‘zgaruvchanlik) prinsipi ilmiy-texnik rivojlanish hisobiga fan, texnika va
+                texnologiyaning izchillik bilan rivojlanishida, ishlab chiqarish muhitining doimiy o‘zgarishida
+                obyektlardan ko‘p marotabali, uzoq muddatli, maqsadli foydalanishni aks ettirdi.
+                Jo‘shqinlik prinsipi standartlashtirish obyektlarini ilmiy-texnikaviy taraqqiyot talablariga
+                muvofiqligini tartiblashtirish maqsadida ularga qo‘yilgan talablarni davriy ravishda qayta ko‘rib
+                chiqishni aks ettiradi.
+                Standartning eskirishi – uning ijtimoiy foydasi va iqtisodiy samarasini davomiyligini chegaralovchi
+                asosiy omildir.
                 Shuningdek standartlashtirishning asosiy prinsiplariga quyidagilar ham kiradi:
-                <br>– me’yoriy hujjatlarni ijtimoiy, iqtisodiy, texnikaviy zarurati va maqbulligini inobatga olgan holda ularni ishlab chiqish maqsadga muvofiqligi;
-                <br>– obyektlarga qo‘yiladigan talablarni kelishib olish va me’yoriy hujjatlarni amalga joriy etish muddatlarini muvofiqlashtirish yo‘li bilan metrologik ta’minlashni qo‘shib hisoblab o‘zaro bog‘langan obyektlarni standartlashtirishning kompleksligi;
-                <br>– me’yoriy hujjatlarni fan va texnikani hozirgi zamon yutuqlariga, ilg‘or tajribaga, qonun hujjatlariga muvofiqligini ta’minlash;
-                <br>– standartlashtirishning hamma bosqichlarida me’yoriy hujjatlarni o‘zaro bog‘liqligini va kelishilganligi, boshqarishning barcha pog‘onalarida ularni o‘xshash obyektlari uchun qaytadan ishlab chiqilmasligi;
-                <br>– amaldagi me’yoriy hujjatlar, standartlashtirish bo‘yicha dasturlar va ish rejalari to‘g‘risidagi axborotlarni oshkoraliligi;
+                <br>– me’yoriy hujjatlarni ijtimoiy, iqtisodiy, texnikaviy zarurati va maqbulligini inobatga olgan holda
+                ularni ishlab chiqish maqsadga muvofiqligi;
+                <br>– obyektlarga qo‘yiladigan talablarni kelishib olish va me’yoriy hujjatlarni amalga joriy etish
+                muddatlarini muvofiqlashtirish yo‘li bilan metrologik ta’minlashni qo‘shib hisoblab o‘zaro bog‘langan
+                obyektlarni standartlashtirishning kompleksligi;
+                <br>– me’yoriy hujjatlarni fan va texnikani hozirgi zamon yutuqlariga, ilg‘or tajribaga, qonun
+                hujjatlariga muvofiqligini ta’minlash;
+                <br>– standartlashtirishning hamma bosqichlarida me’yoriy hujjatlarni o‘zaro bog‘liqligini va
+                kelishilganligi, boshqarishning barcha pog‘onalarida ularni o‘xshash obyektlari uchun qaytadan ishlab
+                chiqilmasligi;
+                <br>– amaldagi me’yoriy hujjatlar, standartlashtirish bo‘yicha dasturlar va ish rejalari to‘g‘risidagi
+                axborotlarni oshkoraliligi;
                 <br>– ko‘pchilik daxldor tomonlarning kelishuviga erishish asosida me’yoriy hujjatlarni tasdiqlash;
                 <br>– me’yoriy hujjatlarning sertifikatlashtirish maqsadlari uchun yaroqliligi;
                 <br>– standartlashtirish sohasida zamonaviy axborot tizimlari va texnologiyalarni qo‘llash va hakozo.
-                Standartlashtirishning jamiyat hayotidagi ahamiyati va iqtisodiyotga ta’siri quyidagi  rasmda tasvirlangan sxemada ifodalab berilgan.
-                <img style="width: 300px;"
-                    src="rasmlar/9_МAVZU_SAMARADORLIK.bmp" alt="">
+                Standartlashtirishning jamiyat hayotidagi ahamiyati va iqtisodiyotga ta’siri quyidagi rasmda
+                tasvirlangan sxemada ifodalab berilgan.
+                <img style="width: 300px;" src="rasmlar/9_МAVZU_SAMARADORLIK.bmp" alt="">
             </p>
         </div>
     </div>
