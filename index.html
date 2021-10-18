@@ -4,6 +4,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+
 <html>
 
 <head>
@@ -14,6 +16,20 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+
+	<style>
+		.qora {
+			display: none;
+			width: 100%;
+			position: fixed;
+			height: 100%;
+			opacity: 0.5;
+			background-color: black;
+			z-index: -999;
+			top: 0;
+			left: 0;
+		}
+	</style>
 </head>
 
 
@@ -21,10 +37,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-
+	<div onclick="toggle()" class="qora"></div>
 	<div class="w3-sidebar  w3-bar-block w3-collapse w3-card w3-animate-left" style="width:300px;" id="mySidebar">
+
 		<button style="height: 50px; margin-top: 10px;" class="w3-bar-item  w3-button w3-large w3-hide-large"
-			onclick="w3_close()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yopish &times;</button>
+			onclick="toggle()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yopish &times;</button>
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
 				<ul class="actions stacked">
@@ -55,7 +72,7 @@
 
 	<div class="w3-main" style="margin-left:200px">
 		<div class="w3-teal">
-			<button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+			<button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="toggle()">&#9776;</button>
 			<div class="w3-container">
 
 			</div>
@@ -196,16 +213,31 @@
 
 
 			<script>
-				function w3_open() {
-					document.getElementById("mySidebar").style.display = "block";
+
+				function toggle() {
+					let side = document.getElementById("mySidebar");
+					if (side.style.display == "block") {
+						side.style.display = "none"
+						document.querySelector(".qora").style.display = "none";
+					}
+					else {
+						document.getElementById("mySidebar").style.display = "block";
+						document.querySelector(".qora").style.display = "block";
+					}
 				}
 
-				function w3_close() {
+				document.addEventListener('ionBackButton', (ev) => {
+					ev.detail.register(10, () => {
+						console.log('Handler was called!');
+						window.history.back()
+					});
+				});
 
-					document.getElementById("mySidebar").style.display = "none";
-				}
+
 
 			</script>
+
+
 		</body>
 
 </html>
