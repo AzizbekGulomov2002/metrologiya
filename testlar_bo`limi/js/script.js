@@ -181,12 +181,16 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3){ // if user scored more than 3
+    if (userScore > 20){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>Ajoyib! 🎉, siz <p>'+ questions.length  +'</p> tadan <p>'+ userScore+'</p>ta topdinggiz<p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore > 1){ // if user scored more than 1
+    else if(userScore > 10){ // if user scored more than 1
+        let scoreTag = '<span>Yaxshi 😎, siz <p>'+  questions.length +'</p> tadan <p>'+ userScoreh +'</p>ta topdinggiz<p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if(userScore > 15){ // if user scored more than 1
         let scoreTag = '<span>Yaxshi 😎, siz <p>'+  questions.length +'</p> tadan <p>'+ userScoreh +'</p>ta topdinggiz<p></span>';
         scoreText.innerHTML = scoreTag;
     }
