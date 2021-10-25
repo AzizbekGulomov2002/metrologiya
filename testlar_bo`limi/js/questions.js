@@ -2,12 +2,12 @@
 let questions = [
   {
 
-    question: "Mеtrоlоgiya  - bu ...?",
-    answer: "O’lchashlar, ularning birliligini ta’minlash usullari va vositalari haqidagi fan.",
+    question: "Mеtrоlоgiya-bu...",
+    answer: "O’lchashlar,ularning birliligini ta’minlash usullari va vositalari haqidagi fan",
     options: [
       "O’lchashlar, ularning birliligini ta’minlash usullari va vositalari haqidagi fan.",
-      "O‘lchаsh nаtijаlаrini qаytа ishlаsh, o‘lchashlardagi xatoliklarni bartaraf etish usullari haqidagi fan",
-      "O‘lchаsh nаtijаlаrini olish, o‘lchash vositalarini ishlab chiqish usullari haqidagi fan",
+      "O‘lchаsh nаtijаsini qаytа ishlаsh, o‘lchashlardagi xatoliklarni topish usullari haqidagi",
+      "O‘lchаsh nаtijаsini olish, o‘lchash vositalarini ishlab chiqish usullari haqidagi",
       "O‘lchаsh, o‘lchаm, mаntiq, ilm mа`nоlаrini bildirаdigаn fаn"
 
 
@@ -130,16 +130,16 @@ let questions = [
   },
   {
     question: "Fizik kаttаlik –….?",
-    answer: "Fizik hodisalarni, materiyaning harakati va xususiyatini miqdoriy kattaligiga aytiladi.",
+    answer: "Fizik hodisalarni, materiyaning harakati va xususiyati kattaligiga aytiladi.",
     options: [
-      "Fizik hodisalarni, materiyaning harakati va xususiyatini miqdoriy kattaligiga aytiladi.",
+      "Fizik hodisalarni, materiyaning harakati va xususiyati kattaligiga aytiladi.",
       "Оbyеktgа tеgishli xоssаlаrning sifаt vа miqdоriy ifоdа qilаdigаn fizikаviy qiymаtidir",
       "Fizikаviy kаttаlik deb,  hаqiqiy qiymаti tаjribа оrqаli tоpiladigan kаttаlik tushuniladi",
       "Kаttаlik tizimigа kirаdigаn tа`riflаnаdigаn fizikаviy kаttаlikdir"
     ]
   },
   {
-    question: "SI tizimidagi kattaliklar qanday guruhlarga ajrailadi?",
+    question: "SI tizimidagi kattaliklarning qanday guruhlari bor?",
     answer: "asosiy va qo‘shimcha kattaliklarga",
     options: [
       "asosiy va qo‘shimcha kattaliklarga",
@@ -149,7 +149,7 @@ let questions = [
     ]
   },
   {
-    question: "Kattalikning o‘lchamligini ifodalashda faqatgina … amalidan foydalaniladi?",
+    question: "Kattalikning o‘lchamligini ifodalashda nimadan foydalaniladi?",
     answer: "ko‘paytirish amalidan",
     options: [
       "bo‘lish amalidan",
@@ -189,7 +189,7 @@ let questions = [
     ]
   },
   {
-    question: "O‘z SDT asos bo‘luvchi me’yoriy hujjatlar majmuidan iborat. Bu hujjat … standartlarga tasniflanadi.",
+    question: "O‘z SDT asos bo‘luvchi me’yoriy hujjatlar nimalardan iborat?",
     answer: "tashkiliy-metodik va umumtexnikaviy",
     options: [
       "tashkiliy-metodik va umumtexnikaviy",
