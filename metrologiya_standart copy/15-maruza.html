@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src="./../search.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
@@ -47,9 +47,8 @@
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Qidiruv...." aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
-                            style="color: white;">Qidiruv</span></button>
+                    <input onkeyup="qidirish(this)" class="form-control mr-sm-2" type="search" placeholder="Qidiruv..."
+                        aria-label="Search">
                 </form>
             </div>
     </nav>

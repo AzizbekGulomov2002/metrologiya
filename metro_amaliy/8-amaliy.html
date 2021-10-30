@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src="./../search.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
@@ -45,9 +45,8 @@
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Qidiruv...." aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
-                            style="color: white;">Qidiruv</span></button>
+                    <input onkeyup="qidirish(this)" class="form-control mr-sm-2" type="search" placeholder="Qidiruv..."
+                        aria-label="Search">
                 </form>
             </div>
     </nav>
@@ -295,87 +294,101 @@
                 <br> A) O‘zbekiston Respublikasi standarti standartlashtirish bo‘yicha texnikaviy qo`mitalar,
                 standartlashtirish bo‘yicha tayanch tashkilotlar, qo‘shma korxonalar, muassasalar, tashkilotlar va
                 iste’volchilar tomonidan ishlab chiqiladi.
-                <br>*B) O‘zbekiston Respublikasi standarti standartlashtirish bo‘yicha texnikaviy qo`mitalar (bundan keyin
+                <br>*B) O‘zbekiston Respublikasi standarti standartlashtirish bo‘yicha texnikaviy qo`mitalar (bundan
+                keyin
                 TQ), standartlashtirish bo‘yicha tayanch tashkilotlar, vazirliklar, idoralar, uyushmalar, konsernlar,
                 davlat, shirkat, pudratchi, aktsioner, qo‘shma korxonalar, muassasalar va tashkilotlar tomonidan ishlab
                 chiqiladi.
-                <br>C) O‘zbekiston Respublikasi standarti faqat standartlashtirish bo‘yicha texnikaviy qo`mitalar tomonidan
+                <br>C) O‘zbekiston Respublikasi standarti faqat standartlashtirish bo‘yicha texnikaviy qo`mitalar
+                tomonidan
                 ishlab chiqiladi.
                 <br>D) Oʻzstandart agentligi tomonidan ishlab chiqiladi.
                 <br>
-                <br><b>2. Standart respublika hududida kimga qarashli ekanligi va mulk shaklidan qat’iy nazar, mahsulotlarni
-                chiqaradigan va iste’mol qiladigan hamma korxona va tashkilotlar uchun majburiymi?</b>
+                <br><b>2. Standart respublika hududida kimga qarashli ekanligi va mulk shaklidan qat’iy nazar,
+                    mahsulotlarni
+                    chiqaradigan va iste’mol qiladigan hamma korxona va tashkilotlar uchun majburiymi?</b>
                 <br>A) Ha, majburiy
                 <br>B) Yoʻq, majburiy emas
                 <br>C) Korxona va Oʻzstandart agentligi oʻrtasidagi shartnomada koʻrsatilishiga bogʻliq
                 <br>D) ma’lum muddat uchun majburiy
                 <br>
-                <br><b>3. О‘zbekiston Respublikasining standartlarini ishlab chiqish, kelishish, tasdiqlash va rо‘yxatga olish
-                tartibi qaysi standartga binoan belgilanadi?</b>
+                <br><b>3. О‘zbekiston Respublikasining standartlarini ishlab chiqish, kelishish, tasdiqlash va rо‘yxatga
+                    olish
+                    tartibi qaysi standartga binoan belgilanadi?</b>
                 <br> A) O‘zDst 1.3-99 standartiga binoan
                 <br>B) O‘zDst 1.2-99 standartiga binoan
                 <br>*C) O‘zDst 1.1-99 standartiga binoan
                 <br>D) GOST 122 – 85 standartiga binoan
                 <br>
-                <br><b>4. Texnikaviy shartlar qaysi standart boʻyicha belgilangan tartibda ishlab chiqiladi, kelishiladi,
-                tasdiqlanadi va rо‘yxatdan о‘tkaziladi?</b>
+                <br><b>4. Texnikaviy shartlar qaysi standart boʻyicha belgilangan tartibda ishlab chiqiladi,
+                    kelishiladi,
+                    tasdiqlanadi va rо‘yxatdan о‘tkaziladi?</b>
                 <br>A) O‘zDst 1.3-99 standartiga binoan
                 <br>*B) O‘zDst 1.2-99 standartiga binoan
                 <br>C) O‘zDst 1.1-99 standartiga binoan
                 <br>D) GOST 122 – 85 standartiga binoan
                 <br>
-                <br><b>5. Korxonlar standarti qaysi standartda belgilangan tartibda ishlab chiqiladi, kelishiladi, tasdiqlanadi
-                va rо‘yxatdan о‘tkaziladi?</b>
+                <br><b>5. Korxonlar standarti qaysi standartda belgilangan tartibda ishlab chiqiladi, kelishiladi,
+                    tasdiqlanadi
+                    va rо‘yxatdan о‘tkaziladi?</b>
                 <br>*A) O‘zDst 1.3-99 standartiga binoan
                 <br>B) O‘zDst 1.2-99 standartiga binoan
                 <br>C) O‘zDst 1.1-99 standartiga binoan
                 <br>D) GOST 122 – 85 standartiga binoan
                 <br>
-                <br><b>6. Standartlashtirish obektlarining xususiyatlari va ularga qо‘yiladigan talablarga qarab me`yoriy
-                hujjatlarning qanday turlari ishlab chiqiladi?</b>
-                <br>*A) asos bо‘luvchi, mahsulotga, jarayonlarga, tekshirish (sinash, о‘lchash, tahlil qilish) usullariga.
+                <br><b>6. Standartlashtirish obektlarining xususiyatlari va ularga qо‘yiladigan talablarga qarab
+                    me`yoriy
+                    hujjatlarning qanday turlari ishlab chiqiladi?</b>
+                <br>*A) asos bо‘luvchi, mahsulotga, jarayonlarga, tekshirish (sinash, о‘lchash, tahlil qilish)
+                usullariga.
                 <br>B) asos bо‘luvchi, mahsulotga, jarayonlarga
                 <br>C) mahsulotga, xizmatlarga, tekshirish (sinash, о‘lchash, tahlil qilish) usullariga.
                 <br>D) asos bо‘luvchi, tekshirish (sinash, о‘lchash, tahlil qilish) usullariga.
                 <br>
-                <br><b>7. Chet elga chiqariladigan mahsulotlarning standartlari qaysi standart bo‘yicha kelishib olinadi?</b>
+                <br><b>7. Chet elga chiqariladigan mahsulotlarning standartlari qaysi standart bo‘yicha kelishib
+                    olinadi?</b>
                 <br>A) O‘zDst 1.3-99 standartiga binoan
                 <br>B) O‘zDst 1.2-99 standartiga binoan
                 <br>C) O‘zDst 1.1-99 standartiga binoan
                 <br>*D) GOST 122 – 85 standartiga binoan
                 <br>
-                <br><b>8. … – mahsulot hayotiy siklining barcha bosqichlarida moddiy va mehnat boyliklarining o‘zgaruvchan
-                ko‘rsatkichlari bo‘yicha, standartni joriy qilishgacha va joriy qilingandan keyin bir yilga hisoblab
-                topiladi.</b>
+                <br><b>8. … – mahsulot hayotiy siklining barcha bosqichlarida moddiy va mehnat boyliklarining
+                    o‘zgaruvchan
+                    ko‘rsatkichlari bo‘yicha, standartni joriy qilishgacha va joriy qilingandan keyin bir yilga hisoblab
+                    topiladi.</b>
                 <br>*A) Moddiy ifodalangan yillik tejam
                 <br>B) Narxda ifodalangan yillik tejam
                 <br>C) Yillik iqtisodiy samara
                 <br>D) Me’yoriy foyda
                 <br>
-                <br><b>9. … – standartni joriy qilishgacha va joriy qilgandan keyin mahsulotni loyihalash, ishlab chiqarish,
-                muomala va foydalanish (iste’mol qilish) ga xarajatlar o‘rtasidagi bir yilga xisoblangan farq.</b>
+                <br><b>9. … – standartni joriy qilishgacha va joriy qilgandan keyin mahsulotni loyihalash, ishlab
+                    chiqarish,
+                    muomala va foydalanish (iste’mol qilish) ga xarajatlar o‘rtasidagi bir yilga xisoblangan farq.</b>
                 <br>A) Moddiy ifodalangan yillik tejam
                 <br>*B) Narxda ifodalangan yillik tejam
                 <br>C) Yillik iqtisodiy samara
                 <br>D) Me’yoriy foyda
                 <br>
                 <br><b>10. … – narxda ifodalangan yillik tejam va standartni ishlab chiqishga va joriy etishga yillik
-                xarajatlar o‘rtasidagi farq.</b>
+                    xarajatlar o‘rtasidagi farq.</b>
                 <br>A) Moddiy ifodalangan yillik tejam
                 <br>B) Narxda ifodalangan yillik tejam
                 <br>*C) Yillik iqtisodiy samara
                 <br>D) Me’yoriy foyda
                 <br>
-                <br><b>11. … – kapital mablag‘lar iqtisodiy samaradorligi me’yoriy koeffitsientining kapital mablag‘lar hajmi
-                ko‘rsatkichiga ko‘paytmasiga teng bo‘lgan keltirilgan harajatlarning tashkil etuvchisi. Me’yoriy foyda
-                kapital mablag‘lar summasidan foiz hisobidagi chegirma kabi aniqlanadi.</b>
+                <br><b>11. … – kapital mablag‘lar iqtisodiy samaradorligi me’yoriy koeffitsientining kapital mablag‘lar
+                    hajmi
+                    ko‘rsatkichiga ko‘paytmasiga teng bo‘lgan keltirilgan harajatlarning tashkil etuvchisi. Me’yoriy
+                    foyda
+                    kapital mablag‘lar summasidan foiz hisobidagi chegirma kabi aniqlanadi.</b>
                 <br>A) Moddiy ifodalangan yillik tejam
                 <br>B) Narxda ifodalangan yillik tejam
                 <br>C) Yillik iqtisodiy samara
                 <br>*D) Me’yoriy foyda
                 <br>
-                <br><b>12. … – Iqtisodiy natijalarga erishish maqsadlari va vositalarini bir butun qilib birlashtiruvchi,
-                maqsadga yunaltirilgan tizimlarning mukammal ishlashini ifodalovchi tushuncha.</b>
+                <br><b>12. … – Iqtisodiy natijalarga erishish maqsadlari va vositalarini bir butun qilib
+                    birlashtiruvchi,
+                    maqsadga yunaltirilgan tizimlarning mukammal ishlashini ifodalovchi tushuncha.</b>
                 <br>A) Vaqt normasi
                 <br>B) Normativ mehnat sarfi
                 <br>*C) Iqtisodiy samaradorlik
@@ -387,15 +400,17 @@
                 <br>C) Iqtisodiy samaradorlik
                 <br>*D) Tejam
                 <br>
-                <br><b>14. … – muayyan ishni bajarish uchun zarur bo‘lgan, kishi-soat yoki kishi-kunlarda o‘lchanadigan, ish
-                vaqti sarfining hisoblangan qiymati.</b>
+                <br><b>14. … – muayyan ishni bajarish uchun zarur bo‘lgan, kishi-soat yoki kishi-kunlarda o‘lchanadigan,
+                    ish
+                    vaqti sarfining hisoblangan qiymati.</b>
                 <br>A) Vaqt normasi
                 <br>*B) Normativ mehnat sarfi
                 <br>C) Iqtisodiy samaradorlik
                 <br>D) Tejam
                 <br>
-                <br><b>15. … – mos operatsion-texnikaviy sharoitlarda mos malakali bir ishchi yoki ishchilar guruhi tomonidan
-                ishlarning ma’lum hajmini bajarishga zarur vaqt sarfi.</b>
+                <br><b>15. … – mos operatsion-texnikaviy sharoitlarda mos malakali bir ishchi yoki ishchilar guruhi
+                    tomonidan
+                    ishlarning ma’lum hajmini bajarishga zarur vaqt sarfi.</b>
                 <br>*A) Vaqt normasi
                 <br>B) Normativ mehnat sarfi
                 <br>C) Iqtisodiy samaradorlik
